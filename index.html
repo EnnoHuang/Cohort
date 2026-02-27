@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoHORT - Cooperative Human Operations with Robot Teams | ARCS</title>
+    <link rel="shortcut icon" href="./assets/img/icon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/classes.css">
+    <link rel="stylesheet" href="./assets/css/elements.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/team.css">
+    <link rel="stylesheet" href="./assets/css/starfield.css">
+    <script src="./assets/js/starfield.js" defer></script>
+</head>
+
+<body>
+    <!-- Add starfield container -->
+    <div class="starfield">
+        <!-- This is used as the origin point for the stars -->
+        <div class="starfield-origin"></div>
+    </div>
+    <input type="checkbox" aria-label="Close Menu" role="button" id="close-menu" class="close-menu">
+    <!-- this is the button: -->
+    <label for="close-menu" title="close menu" class="close-menu-label"></label>
+
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#intro"><img src="./assets/img/arcs_logo.png" alt="ARCS Logo" width="120"></a>
+            </h1>
+    
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="intro" class="main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>CoHORT Project</h2>
+                <p>
+                    Cooperative Human Operations with Robot Teams (CoHORT) is inspired by the NASA JPL CADRE rover system. Our research develops hardware and software for compact rover teams performing autonomous exploration tasks.
+                </p>
+                <a href="#research" class="button">Learn More</a>
+            </div>
+            <div class="intro-img">
+                <img src="./assets/img/nasa_arcs_logo2.png" alt="CoHORT Rover Concept">
+
+                <!-- Replace with actual rover image -->
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="white-bg section">
+        <div class="main-content grid">
+            <h2 class="grid-main-heading">Rover Gallery</h2>
+            <p id="gallery-description">
+                CoHORT Rover Prototypes
+            </p>
+
+            <div class="grid-content no-numbers">
+                <div class="gallery-img">
+                    <img src="./assets/img/lidar.png" alt="CoHORT LiDAR integration">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="./assets/img/lidar.png" alt="CoHORT rover prototype">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="main-bg section">
+        <div class="grid main-content">
+            <h2 class="grid-main-heading">Research Focus</h2>
+            <p class="grid-description">
+                Key areas of investigation in the CoHORT project
+            </p>
+
+            <div class="grid-content">
+                <article>
+                    <h3>Autonomous Coordination</h3>
+                    <p>
+                        Developing algorithms and protocols that enable multiple rovers to coordinate their activities without constant human supervision. This includes task allocation, path planning, and collective decision-making strategies.
+                    </p>
+                </article>
+                
+                <article>
+                    <h3>Human-Robot Interaction</h3>
+                    <p>
+                        Investigating optimal interfaces and interaction paradigms for humans to effectively monitor and guide teams of autonomous rovers. We're exploring intuitive control systems that balance autonomy with human oversight.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Hardware Development</h3>
+                    <p>
+                        Creating robust, modular rover platforms that can operate reliably in challenging environments. Our design emphasizes energy efficiency, sensor integration, and communications capabilities for team coordination.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="white-bg section">
+        <div class="main-content grid">
+            <h2 class="grid-main-heading">Research Team</h2>
+            <p class="grid-description">
+                Meet the researchers behind the CoHORT project
+            </p>
+    
+            <div class="grid-content no-numbers">
+                <article>
+                    <h3>Lead Researchers</h3>
+                    <p>
+                        • Dr. Barry Ridge, CS<br>
+                        • Prof. Amiel Hartman, ME<br>
+                        • Mr. Subhobrata Chakraborty, CS<br>
+                    </p>
+                </article>
+                
+                <article>
+                    <h3>Associates</h3>
+                    <div class="two-column-list">
+                        <p>
+                            • Alexander Chakmakian<br>
+                            • Jean Paul Collazo<br>
+                            • Jose Flores<br>
+                            • Miles Kaddoura<br>
+                            • Laila Kaddoura<br>
+                            • Bhumil Kukadiya<br>
+                        </p>
+                        <p>
+                            • Maxwell Kozlov<br>
+                            • Adrian Nguyen<br>
+                            • Neha Ananthavaram<br>
+                            • Rudra Patel<br>
+                            • Hossein Alishah<br>
+                            • Hariet Yousefi<br>
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="commercialization" class="main-bg section">
+        <div class="main-content grid">
+            <h2 class="grid-main-heading">Applications & Impact</h2>
+            <p class="grid-description">
+                How CoHORT research can benefit society and industry
+            </p>
+
+            <div class="grid-content no-numbers">
+                <article>
+                    <h3>Space Exploration</h3>
+                    <p>
+                        CoHORT technologies can enhance planetary exploration missions by enabling teams of rovers to collaboratively map and investigate larger areas with greater efficiency and resilience than single-rover approaches.
+                    </p>
+                </article>
+                
+                <article>
+                    <h3>Disaster Response</h3>
+                    <p>
+                        Our research has applications in search and rescue operations, where teams of small robots can be deployed to assess dangerous environments and locate survivors without putting human responders at risk.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Industrial Inspection</h3>
+                    <p>
+                        The multi-robot coordination algorithms developed in CoHORT can be adapted for automated inspection of large industrial facilities, infrastructure, or agricultural areas using teams of specialized robots.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="white-bg section">
+        <div class="main-content flexbox-template-content">
+            <h2>About CoHORT</h2>
+            <p>
+                The Cooperative Human Operations with Robot Teams (CoHORT) project at ARCS investigates how teams of small rovers can work together to perform complex tasks autonomously, while also effectively interfacing with human operators.
+            </p>
+            <p>
+                Inspired by NASA JPL's CADRE (Cooperative Autonomous Distributed Robotic Explorers) system, our project focuses on developing both the hardware and software needed for effective multi-robot coordination and human-robot teaming.
+            </p>
+            <p>
+                This research has applications in space exploration, disaster response, environmental monitoring, and other scenarios where human access is limited or dangerous.
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer white-bg">
+        <p>© 2025 Autonomy Research Center for STEAHM. All rights reserved. | <a href="#intro">Terms and Conditions</a></p>
+    </footer>
+
+    <a id="back-to-top" href="#intro">➤</a>
+
+    <!-- Initialize starfield -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Initializing starfield...");
+            
+            // Check if starfield object exists
+            if (typeof Starfield === 'undefined') {
+                console.error("Starfield object not found! Check if starfield.js is loading correctly.");
+                return;
+            }
+            
+            const starfieldContainer = document.querySelector('.starfield');
+            if (!starfieldContainer) {
+                console.error("Starfield container element not found!");
+                return;
+            } else {
+                console.log("Starfield container found:", starfieldContainer);
+            }
+            
+            try {
+                Starfield.setup({
+                    numStars: 500,  // Increased number of stars
+                    baseSpeed: 1.2,
+                    trailLength: 0.85,
+                    starColor: 'rgb(230, 230, 255)',
+                    canvasColor: 'rgba(0, 0, 10, 0.95)', // Darker, more opaque background
+                    hueJitter: 20,
+                    maxAcceleration: 8,
+                    accelerationRate: 0.15,
+                    decelerationRate: 0.08,
+                    minSpawnRadius: 100,
+                    maxSpawnRadius: 600
+                });
+                console.log("Starfield setup complete");
+
+                // Position the origin at the center of the intro section
+                const introSection = document.getElementById('intro');
+                if (introSection) {
+                    const rect = introSection.getBoundingClientRect();
+                    Starfield.setOrigin(rect.width / 2, rect.height / 2);
+                    console.log("Set origin to center of intro section");
+                } else {
+                    console.warn("Intro section not found");
+                }
+
+                // Make hover over the Learn More button accelerate stars
+                const button = document.querySelector('.button');
+                if (button) {
+                    button.addEventListener('mouseenter', () => Starfield.setAccelerate(true));
+                    button.addEventListener('mouseleave', () => Starfield.setAccelerate(false));
+                    console.log("Button event listeners added");
+                } else {
+                    console.warn("Button not found");
+                }
+            } catch (err) {
+                console.error("Error setting up starfield:", err);
+            }
+        });
+    </script>
+</body>
+</html>
